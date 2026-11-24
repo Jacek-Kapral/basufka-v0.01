@@ -1,4 +1,3 @@
-cat > django_template/'{{ project_name }}'/settings/production.py <<'EOF'
 import os
 
 from .base import *
@@ -63,4 +62,3 @@ LOGGING = {
         "level": os.environ.get("DJANGO_LOG_LEVEL", "INFO"),
     },
 }
-EOF

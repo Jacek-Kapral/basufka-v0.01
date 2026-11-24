@@ -1,4 +1,3 @@
-cat > django_template/'{{ project_name }}'/settings/base.py <<'EOF'
 import os
 from pathlib import Path
 
@@ -152,4 +151,3 @@ MEDIA_ROOT = BASE_DIR / "media"
 # Default primary key field type
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-EOF
