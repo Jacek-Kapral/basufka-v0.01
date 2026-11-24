@@ -46,13 +46,28 @@ CSRF_TRUSTED_ORIGINS = [
 # Application definition
 
 INSTALLED_APPS = [
+    # Django built-in applications
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    # Project applications
+    "apps.accounts.apps.AccountsConfig",
+    "apps.profiles",
+    "apps.news",
+    "apps.articles",
+    "apps.blogs",
+    "apps.forum",
+    "apps.events",
+    "apps.messaging",
+    "apps.notifications",
+    "apps.core",
 ]
+
+AUTH_USER_MODEL = "accounts.User"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
