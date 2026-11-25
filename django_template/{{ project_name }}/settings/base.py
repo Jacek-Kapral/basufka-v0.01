@@ -46,6 +46,7 @@ CSRF_TRUSTED_ORIGINS = [
 # Application definition
 
 INSTALLED_APPS = [
+
     # Django built-in applications
     "django.contrib.admin",
     "django.contrib.auth",
@@ -56,15 +57,15 @@ INSTALLED_APPS = [
 
     # Project applications
     "apps.accounts.apps.AccountsConfig",
-    "apps.profiles",
-    "apps.news",
-    "apps.articles",
-    "apps.blogs",
-    "apps.forum",
-    "apps.events",
-    "apps.messaging",
-    "apps.notifications",
-    "apps.core",
+    "apps.profiles.apps.ProfilesConfig",
+    "apps.news.apps.NewsConfig",
+    "apps.articles.apps.ArticlesConfig",
+    "apps.blogs.apps.BlogsConfig",
+    "apps.forum.apps.ForumConfig",
+    "apps.events.apps.EventsConfig",
+    "apps.messaging.apps.MessagingConfig",
+    "apps.notifications.apps.NotificationsConfig",
+    "apps.core.apps.CoreConfig",
 ]
 
 AUTH_USER_MODEL = "accounts.User"
